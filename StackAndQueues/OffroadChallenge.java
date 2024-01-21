@@ -36,10 +36,10 @@ public class OffroadChallenge {
                 fuelQueue.poll();
                 consumptionLevelQueue.pop();
                 altitudesMark.pop();
-            } else if (tankLevel - currentConsumption < neededFuel) {
+            } else  {
                 fuelQueue.poll();
                 consumptionLevelQueue.pop();
-                altitudesMark.pop();
+
 
                 altitude++;
                 System.out.println("John did not reach: Altitude " + altitude);
@@ -61,9 +61,6 @@ public class OffroadChallenge {
             }
             printList(altitudeList);
         }
-    }
-    private static String convertString (String output,List <String> list){
-
     }
 
     private static void printList(List<String> altitudeList) {
